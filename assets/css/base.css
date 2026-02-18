@@ -1,0 +1,75 @@
+:root {
+    --primary-color: rgb(238, 77, 45);
+    --white-color: white;
+    --black-color: black;
+    --text-color: #333;
+    --star-rating-gold: #feb521;
+}
+
+.modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.btn--size-s {
+    border-radius: 4px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 1.4rem;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+.btn--size-M {
+    cursor: pointer;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--white-color);
+    min-width: 145px;
+    font-size: 1.3rem;
+    padding: 10px 50px;
+    text-align: center;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 3px;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.pagination-item {
+    min-width: 40px;
+    text-align: center;
+    margin: 0 6px;
+}
+.pagination-item:hover {
+    filter: brightness(95%);
+}
+.pagination-item a {
+    /* đổi height thì chỉnh ở đây only */
+    --height: 30px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #939393;
+    display: block;
+    width: 100%;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 2px;
+}
+.pagination-item-icon {
+    font-size: 1.2rem;
+}
+.pagination--current.pagination-item a {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
